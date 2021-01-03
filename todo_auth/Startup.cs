@@ -123,6 +123,7 @@ namespace todo_auth
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = "docs/swagger";
             });
             app.UseRouting();
 
